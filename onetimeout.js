@@ -1,6 +1,7 @@
 OneTimeout = function(delay) {
-  if (typeof delay == 'undefined')
+  if (typeof delay === 'undefined') {
     throw new Error('New api');
+  }
   // Pointer to Meteor.setTimeout
   var id = null;
   // Save the methods into the localstorage
